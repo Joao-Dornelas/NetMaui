@@ -87,11 +87,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!-- App Icon -->
-    <!-- não ocorre erro na compilacao, mas icone permanece o mesmo
-			<MauiIcon Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" Include="Resources\AppIcon\appicon_android.svg" ForegroundFile="Resources\AppIcon\appicon_android_fg.svg" TintColor ="#FFFFFF" />
-    -->
+		<!-- App Icon -->    
     <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" TintColor="#FFFFFF" />
+    <MauiIcon Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'" Update="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon_android_fg.svg" TintColor ="#FFFFFF" />
     
 
 		<!-- Splash Screen -->
