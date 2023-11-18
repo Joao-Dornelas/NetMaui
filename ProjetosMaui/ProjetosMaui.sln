@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppContentPage", "AppConten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppNavigationPage", "AppNavigationPage\AppNavigationPage.csproj", "{CDCB4267-8E3A-4B8D-AD42-D38BAC7575FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFlyoutPage", "AppFlyoutPage\AppFlyoutPage.csproj", "{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,12 @@ Global
 		{CDCB4267-8E3A-4B8D-AD42-D38BAC7575FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDCB4267-8E3A-4B8D-AD42-D38BAC7575FA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CDCB4267-8E3A-4B8D-AD42-D38BAC7575FA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +53,7 @@ Global
 		{AC0D44F8-C32A-45E6-BDDD-A3CC2B3BE568} = {E733CD96-BD9F-40C3-BF33-084CAD0EA18F}
 		{AD0BB7F4-F94A-446F-80C8-A22E039D1D12} = {61DF91C9-F4E8-4484-B67A-DB50C6654893}
 		{CDCB4267-8E3A-4B8D-AD42-D38BAC7575FA} = {61DF91C9-F4E8-4484-B67A-DB50C6654893}
+		{F4DA3AC8-E5C6-4C38-A603-35B89CAFC03D} = {61DF91C9-F4E8-4484-B67A-DB50C6654893}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97BE9178-ECD1-4CFB-B8E9-0C8780F0ABDA}
