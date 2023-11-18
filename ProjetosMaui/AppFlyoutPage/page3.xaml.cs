@@ -1,8 +1,8 @@
 namespace AppFlyoutPage;
 
-public partial class page3 : ContentPage
+public partial class Page3 : ContentPage
 {
-	public page3()
+	public Page3()
 	{
 		InitializeComponent();
 	}
