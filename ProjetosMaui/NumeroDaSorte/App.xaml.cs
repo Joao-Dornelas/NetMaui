@@ -1,7 +1,7 @@
 ﻿#if WINDOWS
-using Microsoft.UI;
-using Microsoft.UI.Windowing;
-using Windows.Graphics;
+    using Microsoft.UI;
+    using Microsoft.UI.Windowing;
+    using Windows.Graphics;
 #endif
 
 namespace NumeroDaSorte
