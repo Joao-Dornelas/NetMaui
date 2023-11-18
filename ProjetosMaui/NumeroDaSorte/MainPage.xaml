@@ -13,61 +13,63 @@
                 HeightRequest       = "115"
                 Margin              = "0, 0, 0, 20"/>
         
-            <Label
-                IsVisible           = "false"
-                Margin              = "0, 0, 0, 150"
+            <Label                
                 Text                = "Número da Sorte"
-                VerticalOptions     = "Center" 
-                HorizontalOptions   = "Center"
-                TextColor           = "#00AB37"/>
-        
-            <Label
-                IsVisible           = "true"
-                Margin              = "0, 0, 0, 15"
-                Text                = "O Número da Sorte É:"
+                Margin              = "0, 0, 0, 150"                
                 VerticalOptions     = "Center" 
                 HorizontalOptions   = "Center"
                 TextColor           = "#00AB37"
-                FontSize            = "12"/>
-        
-            <HorizontalStackLayout Margin="0, 80" HorizontalOptions="Center" Spacing="8">
-                <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
-                    <Label Text="01" TextColor="#00AB37" FontSize="24"/>
-                </Border>
-                <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
-                    <Label Text="01" TextColor="#00AB37" FontSize="24"/>
-                </Border>
-                <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
-                    <Label Text="01" TextColor="#00AB37" FontSize="24"/>
-                </Border>
-                <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
-                    <Label Text="01" TextColor="#00AB37" FontSize="24"/>
-                </Border>
-                <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
-                    <Label Text="01" TextColor="#00AB37" FontSize="24"/>
-                </Border>
-                <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
-                    <Label Text="01" TextColor="#00AB37" FontSize="24"/>
-                </Border>
+                x:Name              = "NameApp"
+                IsVisible           = "true"/>
 
-            </HorizontalStackLayout>
+            <VerticalStackLayout x:Name="NumbersContainer" IsVisible="false">
+                <Label                    
+                    Text                = "Seu Número da Sorte é:"
+                    Margin              = "0, 0, 0, 15"                    
+                    VerticalOptions     = "Center" 
+                    HorizontalOptions   = "Center"
+                    TextColor           = "#00AB37"
+                    x:Name              = "Phrase"/>
         
-            <Label
-                IsVisible           = "true"
-                Margin              = "0, 0, 0, 30"
-                Text                = "BOA SORTE!"
-                VerticalOptions     = "Center" 
-                HorizontalOptions   = "Center"
-                TextColor           = "#00AB37"
-                FontSize            = "12"/>
+                <HorizontalStackLayout Margin="0, 80" HorizontalOptions="Center" Spacing="8">
+                    <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label Text="" TextColor="#00AB37" FontSize="24" x:Name="Number0"/>
+                    </Border>
+                    <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label Text="" TextColor="#00AB37" FontSize="24" x:Name="Number1"/>
+                    </Border>
+                    <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label Text="" TextColor="#00AB37" FontSize="24" x:Name="Number2"/>
+                    </Border>
+                    <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label Text="" TextColor="#00AB37" FontSize="24" x:Name="Number3"/>
+                    </Border>
+                    <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label Text="" TextColor="#00AB37" FontSize="24" x:Name="Number4"/>
+                    </Border>
+                    <Border Padding="10, 5" Stroke="#00AB37" StrokeShape="RoundRectangle 8">
+                        <Label Text="" TextColor="#00AB37" FontSize="24" x:Name="Number5"/>
+                    </Border>
+                </HorizontalStackLayout>
         
-            <Button 
+                <Label                
+                    Margin              = "0, 0, 0, 30"
+                    Text                = "BOA SORTE!"
+                    VerticalOptions     = "Center" 
+                    HorizontalOptions   = "Center"
+                    TextColor           = "#00AB37"
+                    FontSize            = "12"/>
+            </VerticalStackLayout>
+        
+            <Button
+                x:Name              = "button"
                 Text                = "Gerar número da sorte"
                 HorizontalOptions   = "Center"
                 CornerRadius        = "20"
                 BackgroundColor     = "#00AB37"
                 TextColor           = "#ffffff"
-                Padding             = "30,15"/>
+                Padding             = "30,15"
+                Clicked="OnGenerateNumbers"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
