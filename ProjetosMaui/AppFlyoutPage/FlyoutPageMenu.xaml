@@ -12,6 +12,11 @@
     
     <FlyoutPage.Detail>
         <!--Conteudo principal -->
-        <pages:Page1/>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:Page1/>
+            </x:Arguments>
+        </NavigationPage>
+        
     </FlyoutPage.Detail>
 </FlyoutPage>
