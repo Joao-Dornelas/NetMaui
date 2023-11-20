@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNavigationPage.Page3"
+             Title="Página 3">
+    <VerticalStackLayout>
+        <Label 
+            Text="Estou na página 03"
+            FontSize="48"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+            Text="Página 01"
+            HorizontalOptions="Center"
+            Clicked="OnButtonClickedPage1"
+            Margin="0,10"/>
+        
+        <Button
+            Text="Página 02"
+            HorizontalOptions="Center"
+            Clicked="OnButtonClickedPage2"/>
+    </VerticalStackLayout>
+</ContentPage>
